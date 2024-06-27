@@ -1,0 +1,153 @@
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.5); 
+  }
+
+  .modal__container {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 0px 0px 0px 15px;
+    border-radius: 30px;
+    width: 80%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .modal--show{
+    display: block;
+  }
+
+  /* Estilos para la parte izquierda del modal, lado de la imagen y los stats básicos */
+
+  .basic__props{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stats{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+ .basic__stats{
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1em;
+ }
+
+ .pokeinfo h2{
+  text-transform: capitalize;
+ }
+
+ .stats__item{
+    width: 22%;
+    background-color: var(--azul);
+    color: white;
+    font-weight: 500;
+    border: 2.5px solid black;
+    border-radius: 10px;
+    padding: 3px 3px 4px 4px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+ }
+  .stats__item img{
+    width: 20px;
+    height: 20px;
+  }
+
+  .pokeinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+  .pokemon__image{
+    width: 50%; 
+    align-self: center;
+    margin-bottom: 30px;
+  }
+
+  .basic__props h2{
+    font-family: "Potta One", system-ui; 
+    font-size: 1.5em;
+    margin-bottom: 30px;
+  }
+
+  /* Estilos para la parte derecha del modal, lado de detail stats */
+
+  .detail__stats{
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: linear-gradient(to top, #0847ca 5%, #12807c 100%);
+    border-radius: 30px;
+  }
+
+  .close__button{
+    background: none;
+    color: var(--blanco);
+    border: none;
+    align-self: flex-end;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  .close__button:hover{
+    color: var(--fire);
+  }
+
+  .detail__stats h2{
+    font-family: "Potta One", system-ui; 
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .detail__stats ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .detail__stats li {
+    background-color: var(--aqua);
+    color: black;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+
+  a{
+    color: black;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    background-color: var(--azulClaro);
+    border-radius: 30px;
+    padding: 5px 15px 5px 15px;
+  }
